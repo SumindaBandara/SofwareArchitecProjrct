@@ -18,7 +18,7 @@ function App() {
       <SearchBar/>
       <Hero/>
       <Body/>
-      <Product/>
+      
       
       
    
