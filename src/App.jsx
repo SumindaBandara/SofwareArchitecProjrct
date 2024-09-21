@@ -5,6 +5,7 @@ import SearchBar from './PAGES/Home/components/SearchBar';
 import Hero from './PAGES/Home/components/Hero';
 import Body from './PAGES/Home/components/Body';
 import Product from './PAGES/Cards/Product';
+import Footer from './PAGES/Home/components/Footer';
 
 
 import Login from './PAGES/Login/login';
@@ -18,6 +19,7 @@ function App() {
       <SearchBar/>
       <Hero/>
       <Body/>
+      <Footer/>
       
       
       
