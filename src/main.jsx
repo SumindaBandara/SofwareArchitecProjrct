@@ -8,6 +8,7 @@ import Login from './PAGES/Login/login.jsx'
 import SignUp from './PAGES/SignUp/SignUp.jsx'
 import ViewMore from './PAGES/viewMore/viewMore.jsx'
 import Product from './PAGES/Cards/Product.jsx'
+import StartBidding from './PAGES/Bidding/StartBidding.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -24,7 +25,12 @@ const router =createBrowserRouter([
 {
   path:"/brows",
   element:<Product/>
+},
+{
+  path:"/startbid",
+  element:<StartBidding/>
 }
+
 
 
 

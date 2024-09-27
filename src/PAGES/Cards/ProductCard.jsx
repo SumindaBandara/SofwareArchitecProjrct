@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import {Link} from "react-router-dom";
 
 import PopUp from './PopUp';
 
@@ -228,7 +229,7 @@ function ProductCard(props,name) {
               <button className="bg-green-500 text-white px-4 py-2 rounded">Call</button>
               <button className="bg-green-500 text-white px-4 py-2 rounded">Chat</button>
               <button className="bg-green-500 text-white px-4 py-2 rounded">Add to Cart</button>
-              <button className="bg-red-500 text-white px-4 py-2 rounded">Start Bidding</button>
+              <button className="bg-red-500 text-white px-4 py-2 rounded"><Link to = "/startbid">Start Bidding</Link></button>
             </div>
           </div>
         </div>
