@@ -6,7 +6,7 @@ import Hero from './PAGES/Home/components/Hero';
 import Body from './PAGES/Home/components/Body';
 import Product from './PAGES/Cards/Product';
 import Footer from './PAGES/Home/components/Footer';
-
+import PaymentGateway from './PAGES/PaymentGateway/PaymentGateway';
 
 import Login from './PAGES/Login/login';
 
@@ -16,10 +16,13 @@ function App() {
     
       <main>
       <Navigation name={name}/>
-      <SearchBar/>
+      
       <Hero/>
       <Body/>
       <Footer/>
+      
+      
+
       
       
       

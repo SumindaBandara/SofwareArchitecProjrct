@@ -1,10 +1,18 @@
 
 import Navigation from '../../components/Navigation'
 import React, { useState } from 'react';
+import { useUser } from "@clerk/clerk-react";
+import { Navigate } from 'react-router-dom';
+
 
 function login() {
   const [showPassword, setShowPassword] = useState(false);
 
+  const { user, isSignedIn, isLoaded } = useUser();
+
+  if (!isSignedIn) {
+    return <Navigate to="/sigup" />;
+  }
   return (
     <div className="flex items-center justify-center min-h-screen bg-cover bg-center" style={{backgroundImage: "url('/public/assets/BrowsAction/pexels-pixabay-164634.jpg')"}}>
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
